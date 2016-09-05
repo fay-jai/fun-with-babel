@@ -10,15 +10,4 @@ class Person {
     }
 }
 
-const user = new Person({
-    name: "Willson",
-    hobbies: [
-        "coding",
-        "basketball",
-        "weight lifting",
-        "teaching"
-    ]
-});
-
-console.log(user.getDescription());
-
+export default Person;
