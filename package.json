@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "exploring babel",
   "scripts": {
-    "transpile": "babel src -d dist"
+    "bundle": "webpack"
   },
   "keywords": [
     "babel",
@@ -12,7 +12,8 @@
   "author": "Willson Mock",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "6.14.0",
-    "babel-preset-latest": "6.14.0"
+    "babel-loader": "6.2.5",
+    "babel-preset-latest": "6.14.0",
+    "webpack": "1.13.2"
   }
 }
