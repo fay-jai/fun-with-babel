@@ -1,4 +1,5 @@
 const path = require("path");
+const CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 const config = {
     entry: { 
@@ -17,7 +18,10 @@ const config = {
                 loader: "babel-loader"
             }
         ]
-    }
+    },
+    plugins: [
+        new CommonsChunkPlugin("common.chunk.js")
+    ]
 };
 
 module.exports = config;
