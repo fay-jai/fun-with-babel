@@ -1,12 +1,13 @@
 const path = require("path");
 
 const config = {
-    entry: [
-        "./src/app.js"
-    ],
+    entry: { 
+        "entry1": "./src/entry1.js",
+        "entry2": "./src/entry2.js"
+    },
     output: {
         path: path.join(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "[name].chunk.js"
     },
     module: {
         loaders: [
